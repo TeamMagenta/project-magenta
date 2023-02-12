@@ -19,3 +19,7 @@ This website is a portfolio for a photographer and give potential client a way o
 ## Flow Chart
 
 ![Flow Chart](img/FlowChart.png)
+
+## Domain Model
+
+![Domain Model](img/finalDomainModel.png)
