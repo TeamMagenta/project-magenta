@@ -2,22 +2,21 @@
 
 
 let swiper2 = new Swiper('.swiper2', {
-  effect: 'coverflow',
+  effect:'coverflow',
   direction: 'horizontal',
   loop: true,
-  autoplay: {
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
   pagination: {
     el: '.swiper-pagination1',
-    clickable: true,
+    clickable:true,
   },
-  coverflowEffect: {
+  coverflowEffect:{
     slideShadows: false,
-    rotate: 20,
-    scale: 0.70,
+    rotate:20,
+    scale:0.70,
   }
 
 });
+
+
+
 
