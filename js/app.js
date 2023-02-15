@@ -43,4 +43,3 @@ mediaButton.onclick = function () {
 
 };
 
-
