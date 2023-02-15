@@ -1,13 +1,15 @@
 'use strict';
 
-let profileSlider1 = document.getElementsByClassName("profileSlider1");
+let profileSlider1 = document.getElementById('gallerySlider1');
 let profilePicture1 = document.getElementById('profilePicture1');
 let profileName1 = document.getElementById('profileName1');
 let profileLocation1 = document.getElementById('profileLocation1');
 let profileAboutMe1 = document.getElementById('profileAboutMe1');
-
-let image2 = document.getElementById("img2");
-let image3 = document.getElementById("img3");
+let profileSlider2 = document.getElementById('gallerySlider2');
+let profilePicture2 = document.getElementById('profilePicture2');
+let profileName2 = document.getElementById('profileName2');
+let profileLocation2 = document.getElementById('profileLocation2');
+let profileAboutMe2 = document.getElementById('profileAboutMe2');
 // This is for the slider on the galleries. I learned it from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self
 //Creating Index for Slide 1
 let slideIndex1 = 1;
@@ -57,52 +59,56 @@ function showDivs3(n) {
 }
 
 // Contructor to build my items and add them to the array allProductArray
-class BetaItem {
+class Photographer {
   static allPhotographerObjects = [];
   static photographersQue = [];
-  constructor(name, location, aboutMe, category, gallery, reviews,src = "jpg") {
+  constructor(name, location, aboutMe, category, reviews) {
     this.name = name;
-    this.src = `img/${name}/${name}.${src}`;
+    this.profilePic = `img/${name}/${name}.jpg`;
     this.location = location;
     this.aboutMe = aboutMe;
     this.category = category;
-    this.gallery = gallery;
     this.reviews = reviews;
-
-    BetaItem.allPhotographerObjects.push(this);
+    this.photoArray = [];
+    for(let i = 1; i < 11; i++){
+      this.photoArray[i-1] = `img/${name}/${i}.jpg`
+    }
+    Photographer.allPhotographerObjects.push(this);
   }
 }
 
-function preloader()
-{
-     // counter
-     var i = 0;
-     // create object
-     imageObj = new Image();
 
-     // set image list
-     images = new Array();
-     images[0]="img/paul/pexels-arthur-ogleznev-1439260.jpg"
-     images[1]="img/paul/pexels-danielle-reese-2496344.jpg"
-     images[2]="img/paul/pexels-emir-kaan-okutan-2403569.jpg"
-     images[3]="img/paul/photo-1520854221256-17451cc331bf.jpg"
-
-     // start preloading
-     for(i=0; i<=3; i++)
-     {
-          imageObj.src=images[i];
-     }
-
-     let paul = new BetaItem('Paul', 'Madrid, Spain', 'I live in Madrid and have 10 years of experience', 'Wedding', preloader(), 'He did Great')
-}
-
+let sara = new Photographer('Sara', 'Seattle, Wa', '25 year old photographer living my best life', 'Family', 'Very professional. We were very happy with our results');
+let paul = new Photographer('Paul', 'Madrid, Spain', 'I live in Madrid and have 10 years of experience', 'Wedding','He did Great');
+console.log(Photographer.allPhotographerObjects[0].photoArray.length);
 // let profileSlider1 = document.getElementsByClassName("profileSlider1");
+function renderPhotographers(){
+for(let i =0; i < 1; i++ ){
+  let profileImg = document.createElement("img");
+  profileImg.src = `${Photographer.allPhotographerObjects[i].profilePic}`;
+  profilePicture1.appendChild(profileImg);
+  let profileName = document.createElement("h2");
+  profileName.textContent = `${Photographer.allPhotographerObjects[i].name}`;
+  profileName1.appendChild(profileName);
+  let profileLocation = document.createElement("h2")
+  profileLocation1.textContent = `${Photographer.allPhotographerObjects[i].location}`
+  profileLocation1.appendChild(profileLocation);
+  let profileAboutMe = document.createElement("p")
+  profileAboutMe1.textContent = `${Photographer.allPhotographerObjects[i].aboutMe}`
+  profileAboutMe1.appendChild(profileAboutMe);
+
+  for(let j=0; j < Photographer.allPhotographerObjects[i].photoArray.length; j++){
+    let profileSlider = document.createElement("img");
+    profileSlider.classList.add(`mySlides${i+1}`);
+    profileSlider.src = `${Photographer.allPhotographerObjects[i].photoArray[j]}`;
+    profileSlider1.appendChild(profileSlider);
+  }
+}
+}
+renderPhotographers();
+// let profileSlider1 = document.getElementById('gallerySlider1');
 // let profilePicture1 = document.getElementById('profilePicture1');
 // let profileName1 = document.getElementById('profileName1');
 // let profileLocation1 = document.getElementById('profileLocation1');
 // let profileAboutMe1 = document.getElementById('profileAboutMe1');
-function renderPhotographer(){
-  profileName1.src = BetaItem.allPhotographerObjects[0].src;
-  
-}
-renderPhotographer();
+
