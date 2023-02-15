@@ -4,7 +4,9 @@ body{
   min-width: 300px;
   max-width:1400px;
   margin:auto;
-  overflow-x: hidden;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
+  position: absolute;
   font-family: 'Cabin Condensed', sans-serif;
 }
 
