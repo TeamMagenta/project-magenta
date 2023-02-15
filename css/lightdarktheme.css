@@ -1,0 +1,134 @@
+/* :root{
+  --bs-dark: #212529;
+}
+
+.theme-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.theme-container:hover {
+  opacity: 0.8;
+}
+
+.shadow-dark {
+  background: linear-gradient(145deg, #23282c, #1e2125);
+  box-shadow: 17px 17px 23px #1a1d20,
+    -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+    inset -5px -5px 4px #24282c;
+}
+
+.shadow-light {
+  box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+    inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+    inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+}
+
+@keyframes change {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+.change {
+  animation-name: change;
+  animation-duration: 1s;
+  animation-direction: alternate;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+:root {
+  --main-bg-color:white;
+  --title-txt: black;
+  --btn-color: black;
+  --btn-txt-color: white;
+  --icon-color: black;
+}
+.darkMode {
+  --main-bg-color: #222;
+  --title-txt: white;
+  --btn-color: orange;
+  --btn-txt-color: black;
+  --icon-color: orange;
+}
+body {
+  background-color: var(--main-bg-color);
+  transition: all 600ms ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fa-sun, .fa-moon {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  color: var(--icon-color);
+  transition: all 600ms ease-in-out;
+}
+.fa-moon {
+  color: var(--icon-color);
+}
+h1 {
+  margin-bottom: 20px;
+  color: var(--title-txt);
+  transition: all 600ms ease-in-out;
+}
+button {
+  outline: none;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: var(--btn-color);
+  color: var(--btn-txt-color);
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+.open {
+  animation: smooth 300ms;
+}
+.close {
+  animation: closing 300ms;
+}
+
+
+@keyframes smooth {
+  0% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-400px);
+      opacity: 0;
+  }
+}
+@keyframes closing {
+  100% {
+      transform: translateY(-400px);
+      opacity: 0;
+  }
+  0% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
