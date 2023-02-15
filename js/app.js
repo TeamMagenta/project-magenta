@@ -30,3 +30,17 @@ $('.placeholder').click(function () {
 })
 
 
+//nav bar function concept don't know if we need this.
+
+const mainListDiv = document.getElementById('mainListDiv'),
+  mediaButton = document.getElementById('mediaButton');
+
+mediaButton.onclick = function () {
+
+
+  mainListDiv.classList.toggle('show_list');
+  mediaButton.classList.toggle('active');
+
+};
+
+
