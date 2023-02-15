@@ -1,8 +1,5 @@
-
-
-/*Light Dark Toggle*/
-
-const btn = document.querySelector('button')
+// light dark toggle
+const btn = document.querySelector('button');
 
 //FUNCTIONS
 function soundClick() {
