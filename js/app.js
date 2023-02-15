@@ -6,16 +6,24 @@ $('#home').click(function () {
   window.location.href = 'index.html'
 })
 
-$('#profiles').click(function () {
-  window.location.href = '---.html'
+$('#photographer').click(function () {
+  window.location.href = 'photographers.html'
 })
 
 $('#aboutUs').click(function () {
-  window.location.href = '---.html'
+  window.location.href = 'aboutus.html'
 })
 
-$('#PLACEHOLDER').click(function () {
-  window.location.href = '---.html'
+$('#profile1').click(function () {
+  window.location.href = 'profile1.html'
+})
+
+$('#profile2').click(function () {
+  window.location.href = 'profile2.html'
+})
+
+$('#profile3').click(function () {
+  window.location.href = 'profile3.html'
 })
 
 
@@ -30,7 +38,10 @@ $('.placeholder').click(function () {
 })
 
 
-//nav bar function concept don't know if we need this.
+//localstorage
+
+
+//nav bar function concept. don't know if we need this.
 
 const mainListDiv = document.getElementById('mainListDiv'),
   mediaButton = document.getElementById('mediaButton');
