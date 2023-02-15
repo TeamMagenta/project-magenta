@@ -78,7 +78,7 @@
 
 // render(() => <ThemeToggler />, document.getElementById("app")!);
 
-const btn = document.querySelector('button')
+const btn = document.querySelector('button');
 
 //FUNCTIONS
 function soundClick() {
