@@ -111,4 +111,3 @@ renderPhotographers();
 // let profileName1 = document.getElementById('profileName1');
 // let profileLocation1 = document.getElementById('profileLocation1');
 // let profileAboutMe1 = document.getElementById('profileAboutMe1');
-
