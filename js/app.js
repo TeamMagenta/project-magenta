@@ -25,9 +25,8 @@ $('.placeholder').click(function () {
   total += 9
   localStorage.setItem('profileInfo', JSON.stringify(formData));
   setTimeout(function () {
-      $('.placeholder p').hide()
+    $('.placeholder p').hide()
   }, 1500);
 })
 
 
-this is another TextDecoderStream.
