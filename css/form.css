@@ -5,12 +5,12 @@ body {
   background-color: #edebd7;
   justify-content: center;
   height: 100vh;
-}
+};
 
 main {
-  height: 50vh;
+  height: 200vh;
   margin: 0;
-  display: grid;
+  display: auto;
   place-items: center;
 }
 
@@ -29,6 +29,6 @@ footer {
   width: 100%;
   height: 60px;
   background: #edebd7;
-}
+};
 
 

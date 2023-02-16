@@ -5,8 +5,8 @@ figure.snip1186 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
+  min-width: 100px;
+  max-width: 200px;
   width: 100%;
   background: #000000;
   color: #ffffff;
