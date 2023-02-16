@@ -78,11 +78,6 @@ let profileAboutMe1 = document.getElementById(`profileAboutMe${i}`);
 }
 }
 renderPhotographers();
-// let profileSlider1 = document.getElementById('gallerySlider1');
-// let profilePicture1 = document.getElementById('profilePicture1');
-// let profileName1 = document.getElementById('profileName1');
-// let profileLocation1 = document.getElementById('profileLocation1');
-// let profileAboutMe1 = document.getElementById('profileAboutMe1');
 
 let slideIndex1 = 1;
 showDivs1(slideIndex1);
@@ -130,3 +125,4 @@ function showDivs3(n) {
   }
   x[slideIndex3-1].style.display = 'block';
 }
+
