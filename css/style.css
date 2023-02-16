@@ -7,7 +7,7 @@ main {
   width: 75%;
   height: 800px;
   margin: auto;
-  background-color: #6e675f;
+  background-color: #6e675f; */
 
 }
 
@@ -30,7 +30,7 @@ nav {
 
 .navButtons {
   /* border: 2px solid black; */
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
   width: 100%;
 }

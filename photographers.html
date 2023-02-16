@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photographers Page</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/profileCards.css" />
      <link rel="stylesheet" href="./css/navBar.css">
 
@@ -29,34 +29,32 @@
       <p>hello</p>
       <div id="profileCardHolder">
         <div id="profileCard1">
-          <div id="profileCardGallery1">
-            <div id="gallerySlider1">
-              <img class="mySlides1"/>
 
+
+            <div id="profileCardGallery1">
+              <div id="gallerySlider1"></div>
+              <div class="buttons1">
+                <button class="buttonLeft" onclick="plusDivs1(-1)">
+                  &#10094;
+                </button>
+                <button class="buttonRight" onclick="plusDivs1(1)">
+                  &#10095;
+                </button>
+              </div>
             </div>
-            <div class="buttons1">
-              <button class="buttonLeft" onclick="plusDivs1(-1)">
-                &#10094;
-              </button>
-              <button class="buttonRight" onclick="plusDivs1(1)">
-                &#10095;
-              </button>
+            <div id="profilePicture1"></div>
+            <div id="lowerCardInfo1">
+              <div id="profileName1"></div>
+              <div id="profileLocation1"></div>
+              <div id="profileAboutMe1"></div>
+              <h2 id="viewProfileButton1">View Profile</h2>
             </div>
-          </div>
-          <div id="profilePicture1">
-          </div>
-          <div id="lowerCardInfo1">
-            <div id="profileName1"></div>
-            <div id="profileLocation1"></div>
-            <div id="profileAboutMe1"></div>
-            <h2 id="viewProfileButton1">View Profile</h2>
-          </div>
+            <div class="card"></div>
         </div>
+
         <div id="profileCard2">
           <div id="profileCardGallery2">
-            <div id="gallerySlider2">
-              <img class="mySlides2"/>
-            </div>
+            <div id="gallerySlider2"></div>
             <div class="buttons2">
               <button class="buttonLeft" onclick="plusDivs2(-1)">
                 &#10094;
@@ -66,25 +64,17 @@
               </button>
             </div>
           </div>
-          <div id="profilePicture2">
-            <img src="paul/paul.jpg" />
-          </div>
+          <div id="profilePicture2"></div>
           <div id="lowerCardInfo2">
             <div id="profileName2"></div>
             <div id="profileLocation2"></div>
-            <div id="profileAboutMe2">
-            </div>
+            <div id="profileAboutMe2"></div>
             <h2 id="viewProfileButton2">View Profile</h2>
           </div>
         </div>
         <div id="profileCard3">
           <div id="profileCardGallery3">
-            <div id="gallerySlider3">
-              <img class="mySlides3"/>
-              <img class="mySlides3"/>
-              <img class="mySlides3"/>
-              <img class="mySlides3"/>
-            </div>
+            <div id="gallerySlider3"></div>
             <div class="buttons3">
               <button class="buttonLeft" onclick="plusDivs3(-1)">
                 &#10094;
@@ -94,15 +84,11 @@
               </button>
             </div>
           </div>
-          <div id="profilePicture3">
-            <img src="paul/paul.jpg" />
-          </div>
+          <div id="profilePicture3"></div>
           <div id="lowerCardInfo3">
-            <div id="profileName3"><h2>Paul</h2></div>
-            <div id="profileLocation3"><h2>Madrid, Spain</h2></div>
-            <div id="profileAboutMe3">
-              <p>I am live in Madrid and have 10 years of experience</p>
-            </div>
+            <div id="profileName3"></div>
+            <div id="profileLocation3"></div>
+            <div id="profileAboutMe3"></div>
             <h2 id="viewProfileButton3">View Profile</h2>
           </div>
         </div>
