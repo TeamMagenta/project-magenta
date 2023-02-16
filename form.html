@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-
   <link rel="stylesheet" href="./css/navBar.css">
   <link rel="stylesheet" href="./css/form.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/navBar.css">
+  <link rel="stylesheet" href="./css/lightdarktheme.css">
 
+  <title>Magenta Photography</title>
 
   <!--Form Layout-->
   <style>
@@ -45,7 +45,7 @@
       position: relative;
       width: 80%;
       border-radius: 30px;
-      background: #fff;
+      background: #bc8383;
     }
 
     .form-left-decoration,
@@ -55,7 +55,7 @@
       width: 50px;
       height: 20px;
       border-radius: 20px;
-      background: #408e85;
+      background: #328577;
     }
 
     .form-left-decoration {
@@ -106,7 +106,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: #fff;
+      background: #328577;
     }
 
     .form-inner {
@@ -121,7 +121,7 @@
       margin-bottom: 10px;
       border: none;
       border-radius: 20px;
-      background: #d0dfe8;
+      background: #e7f3f9;
     }
 
     .form-inner textarea {
@@ -135,7 +135,7 @@
       border-radius: 20px;
       border: none;
       border-bottom: 4px solid #8c4899;
-      background: #000000;
+      background: #328577;
       font-size: 16px;
       font-weight: 400;
       color: #fff;
@@ -151,20 +151,24 @@
       }
     }
   </style>
-
 </head>
 
 <body>
-
-  <!--Nav Bar-->
-  <div id="cover">
-    <menu>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="photographers.html">Photographers Page</a></li>
-      <li><a href="form.html">Commission A Professional</a></li>
-    </menu>
-
+  <header>
+    <!--Nav Bar-->
+    <div id="cover">
+      <menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="photographers.html">Photographers Page</a></li>
+        <li><a href="form.html">Commission A Professional</a></li>
+        <div class="container">
+          <i class="fas fa-sun fa-3x"></i>
+          <button>Switch Theme</button>
+        </div>
+      </menu>
+  </header>
+  <main>
     <!--fillable form-->
     <div id="result"></div>
     <div class="main-block">
@@ -183,16 +187,16 @@
         <h1>Request A Professional in Your Area</h1>
         <input type="text" placeholder="Username">
         <input type="location" placeholder="Location">
-        <textarea placeholder="Message/Special Requests" rows="5"></textarea>
+        <textarea placeholder="Message" rows="5"></textarea>
         <button id="submit">Submit</button>
       </div>
     </form>
-
-    <script src="js/form.js"></script>
-    <!--<script src="./js/lightdarktheme.js"></script>
-    <script src="./js/form.js"></script>-->
+  </main>
+  <footer>Developed by Team Magenta for Code Fellows
+  </footer>
+  <script src="js/form.js"></script>
+  <!--Light Dark Toggle-->
+  <script src="./js/lightdarktheme.js"></script>
 </body>
-
-<footer>Developed by Project Magenta for Code Fellows</footer>
 
 </html>

@@ -2,9 +2,16 @@ body {
   align-items: auto;
   margin: auto;
   text-align: center;
-  background-color: #ae9090;
+  background-color: #edebd7;
   justify-content: center;
   height: 100vh;
+}
+
+main {
+  height: 50vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
 }
 
 
@@ -13,13 +20,15 @@ body {
   margin: 0;
   display: grid;
   place-items: center;
-}
+};
 
 
 footer {
-  position: fixed;
+  position: bottom;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background: #ae9090;
+  background: #edebd7;
 }
+
+

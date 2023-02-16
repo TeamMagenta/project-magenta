@@ -5,6 +5,10 @@ let swiper2 = new Swiper('.swiper2', {
   effect:'coverflow',
   direction: 'horizontal',
   loop: true,
+  autoplay: {
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   pagination: {
     el: '.swiper-pagination1',
     clickable:true,
