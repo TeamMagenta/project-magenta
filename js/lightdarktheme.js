@@ -1,19 +1,6 @@
 
 
 const btn = document.querySelector('button');
-<<<<<<< HEAD
-
-//FUNCTIONS
-// function soundClick() {
-//   let audio = new Audio('click-one.mp3');
-//   audio.play();
-// }
-// function soundClickTwo() {
-//   let audio = new Audio("click-two.mp3");
-//   audio.play();
-// }
-=======
->>>>>>> 2c1621d46155c2b7121d97db91d75b9397a171bd
 const darkMode = () => {
   const body = document.querySelector('body');
   const sun = document.querySelector('i');
