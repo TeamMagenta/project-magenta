@@ -735,6 +735,9 @@ section .container {
   justify-content: space-between;
 }
 
+.comment-section-container{
+ align-self: auto;
+}
 
 
 
