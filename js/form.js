@@ -1,43 +1,19 @@
-// light dark toggle
-const btn = document.querySelector('button');
+/*local storage for form */
 
-//FUNCTIONS
-function soundClick() {
-  let audio = new Audio('click-one.mp3');
-  audio.play();
-}
-function soundClickTwo() {
-  let audio = new Audio("click-two.mp3");
-  audio.play();
-}
-const darkMode = () => {
-  const body = document.querySelector('body');
-  const sun = document.querySelector('i');
-  const mode = document.querySelector('h1');
-  body.classList.toggle('darkMode');
+window.onload = function () {
 
-  if (body.classList.contains('darkMode')) {
-    sun.className = 'fas fa-moon fa-3x';
-    mode.textContent = "Dark Mode";
-    sun.classList.add('open');
-    soundClick();
-    localStorage.setItem('theme', 'dark');
-  } else {
-    sun.className = 'fas fa-sun fa-3x';
-    mode.textContent = "Light Mode";
-    sun.classList.add('close');
-    soundClickTwo();
-    localStorage.setItem('theme', 'light');
+  // Check for LocalStorage support.
+  if (localStorage) {
+
+    document.getElementById('submit').addEventListener('submit', function () {
+      let name = document.getElementById('Username').value;
+      localStorage.setItem('Username', name);
+    });
   }
 };
 
-//EVENT LISTENER
-btn.addEventListener('click', darkMode);
+/*Listener for Submit button*/
 
-//LOCAL STORAGE
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme === 'dark') {
-  darkMode();
-} else {
-  localStorage.removeItem('dark');
-}
+document.getElementById("submit").addEventListener("click", function () {
+  alert('Your request has been sent! We will contact you shortly with details!');
+});
