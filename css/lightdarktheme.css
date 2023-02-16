@@ -11,8 +11,8 @@
 }
 .darkMode {
   --main-bg-color: #222;
-  --title-txt: white;
-  --btn-color: orange;
+  --title-txt: #F5F3CE;
+  --btn-color: #bb86fc;
   --btn-txt-color: black;
   --icon-color: orange;
 }
@@ -33,7 +33,7 @@ body {
   transition: all 600ms ease-in-out;
 }
 .fa-moon {
-  color: var(--icon-color);
+  color: #F5F3CE;
 }
 h1 {
   margin-bottom: 10px;
@@ -67,6 +67,9 @@ button {
   text-align: center;
 }
 
+.fa-sun{
+  --icon-color:orange;
+}
 
 
 @keyframes smooth {
