@@ -1,19 +1,21 @@
 /*local storage for form */
 
-window.onload = function () {
+//Listener for Submit button
 
-  // Check for LocalStorage support.
-  if (localStorage) {
+/*const storageInput = document.querySelector(‘.storage’);
+const text = document.querySelector(".Username");
+const text = document.querySelector(".location");
+const text = document.querySelector(".Message/Special Requests");
+const button = document.querySelector(".submit");
 
-    document.getElementById('submit').addEventListener('submit', function () {
-      let name = document.getElementById('Username').value;
-      localStorage.setItem('Username', name);
-    });
-  }
-};
 
-/*Listener for Submit button*/
 
+// Event Listener that listens to input
+storageInput.addEventListener(‘input’, name => {
+text.textContent = name.target.value
+})*/
+
+//function for form submission
 document.getElementById("submit").addEventListener("click", function () {
   alert('Your request has been sent! We will contact you shortly with details!');
 });
