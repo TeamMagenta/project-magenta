@@ -14,6 +14,7 @@ class Photographer {
     this.aboutMe = aboutMe;
     this.category = category;
     this.reviews = reviews;
+    this.html = `${name}.html`
     this.photoArray = [];
     this.creatingPhotoGallery = function (){
     for(let i = 1; i < 11; i++){
@@ -45,16 +46,18 @@ function randomPhotographerArray() {
 
 }
 randomPhotographerArray();
-console.log(Photographer.allPhotographerObjects[0].photoArray.length);
 // let profileSlider1 = document.getElementsByClassName("profileSlider1");
 function renderPhotographers(){
 for(let i =1; i <4; i++ ){
 
-  let profileSlider1 = document.getElementById(`gallerySlider${i}`);
+let profileSlider1 = document.getElementById(`gallerySlider${i}`);
 let profilePicture1 = document.getElementById(`profilePicture${i}`);
 let profileName1 = document.getElementById(`profileName${i}`);
 let profileLocation1 = document.getElementById(`profileLocation${i}`);
 let profileAboutMe1 = document.getElementById(`profileAboutMe${i}`);
+let profileHTML = document.getElementById(`viewProfileButton${i}`)
+
+profileHTML.href = `${Photographer.photographersQue[i].html}`;
 
   let profileImg = document.createElement("img");
   profileImg.src = `${Photographer.photographersQue[i].profilePic}`;
@@ -125,4 +128,3 @@ function showDivs3(n) {
   }
   x[slideIndex3-1].style.display = 'block';
 }
-

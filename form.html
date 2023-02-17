@@ -1,168 +1,23 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-
+  <script src="https://kit.fontawesome.com/cf6ef74e1b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="./css/navBar.css">
-  <link rel="stylesheet" href="./css/form.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
-
-  <!--Form Layout-->
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      min-height: 100vh;
-      padding: 0;
-      margin: 0;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 14px;
-      color: #666;
-    }
-
-    input,
-    textarea {
-      outline: none;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      background: #423639;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-weight: 500;
-    }
-
-    form {
-      position: relative;
-      width: 80%;
-      border-radius: 30px;
-      background: #fff;
-    }
-
-    .form-left-decoration,
-    .form-right-decoration {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 20px;
-      border-radius: 20px;
-      background: #408e85;
-    }
-
-    .form-left-decoration {
-      bottom: 60px;
-      left: -30px;
-    }
-
-    .form-right-decoration {
-      top: 60px;
-      right: -30px;
-    }
-
-    .form-left-decoration:before,
-    .form-left-decoration:after,
-    .form-right-decoration:before,
-    .form-right-decoration:after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 20px;
-      border-radius: 30px;
-      background: #fff;
-    }
-
-    .form-left-decoration:before {
-      top: -20px;
-    }
-
-    .form-left-decoration:after {
-      top: 20px;
-      left: 10px;
-    }
-
-    .form-right-decoration:before {
-      top: -20px;
-      right: 0;
-    }
-
-    .form-right-decoration:after {
-      top: 20px;
-      right: 10px;
-    }
-
-    .circle {
-      position: absolute;
-      bottom: 80px;
-      left: -55px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #fff;
-    }
-
-    .form-inner {
-      padding: 40px;
-    }
-
-    .form-inner input,
-    .form-inner textarea {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 20px;
-      background: #d0dfe8;
-    }
-
-    .form-inner textarea {
-      resize: none;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 20px;
-      border: none;
-      border-bottom: 4px solid #8c4899;
-      background: #000000;
-      font-size: 16px;
-      font-weight: 400;
-      color: #fff;
-    }
-
-    button:hover {
-      background: #408e85;
-    }
-
-    @media (min-width: 568px) {
-      form {
-        width: 60%;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="./css/lightdarktheme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <title>Magenta Photography</title>
 </head>
 
 <body>
-
+  <header>
   <!--Nav Bar-->
   <div id="cover">
     <menu>
@@ -170,37 +25,22 @@
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="photographers.html">Photographers Page</a></li>
       <li><a href="form.html">Commission A Professional</a></li>
-    </menu>
-
-    <!--fillable form-->
-    <div id="result"></div>
-    <div class="main-block">
-      <div class="left-part">
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-at"></i>
-        <i class="fas fa-mail-bulk"></i>
+      <div class="container">
+        <i class="fas fa-sun fa-3x"></i>
+        <button>Switch Theme</button>
       </div>
-=======
-  <title>Request Form</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="./css/lightdarktheme.css">
-</head>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-</head>
-
-<body>
-  <div class="container">
-    <i class="fas fa-sun fa-3x"></i>
-    <h1>Light Mode</h1>
-    <button>Switch Theme</button>
-</div>
+    </menu>
+  </header>
   <main>
+      <h1>Find a Photographer where you're going!</h1>
+<!--fillable form-->
+    <div id="result"></div>
+ <main>
   <div class="main-block">
     <div class="left-part">
       <i class="fas fa-envelope"></i>
       <i class="fas fa-at"></i>
       <i class="fas fa-mail-bulk"></i>
->>>>>>> 2c1621d46155c2b7121d97db91d75b9397a171bd
     </div>
 
     <form action="/" class="decor">
@@ -215,19 +55,15 @@
         <button id="submit">Submit</button>
       </div>
     </form>
+  </main>
+      <!--Light Dark Toggle-->
 
-<<<<<<< HEAD
-    <script src="js/form.js"></script>
-    <!--<script src="./js/lightdarktheme.js"></script>
-    <script src="./js/form.js"></script>-->
-=======
-
-  </div>
-</main>
-<script src="./js/lightdarktheme.js"></script>
->>>>>>> 2c1621d46155c2b7121d97db91d75b9397a171bd
+<script src="https://kit.fontawesome.com/cf6ef74e1b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/locationSlider.js"></script>
+  <script src="app.js"></script>
+  <script src="./js/lightdarktheme.js"></script>
 </body>
 
-<footer>Developed by Project Magenta for Code Fellows</footer>
-
 </html>
+
