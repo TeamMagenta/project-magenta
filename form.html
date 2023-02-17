@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-  <title>Request Form</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="https://kit.fontawesome.com/cf6ef74e1b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="./css/navBar.css">
+  <link rel="stylesheet" href="./css/lightdarktheme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
-<style></style>
-
+  <title>Magenta Photography</title>
 </head>
 
 <body>
+  <header>
+  <!--Nav Bar-->
+  <div id="cover">
+    <menu>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="photographers.html">Photographers Page</a></li>
+      <li><a href="form.html">Commission A Professional</a></li>
+      <div class="container">
+        <i class="fas fa-sun fa-3x"></i>
+        <button>Switch Theme</button>
+      </div>
+    </menu>
+  </header>
+  <main>
+      <h1>Find a Photographer where you're going!</h1>
+<!--fillable form-->
+    <div id="result"></div>
+ <main>
   <div class="main-block">
     <div class="left-part">
       <i class="fas fa-envelope"></i>
       <i class="fas fa-at"></i>
       <i class="fas fa-mail-bulk"></i>
     </div>
-    <form action="/">
-      <h1>Request A Professional Photographer in Your Area!</h1>
-      <div class="info">
-        <input class="fname" type="text" name="name" placeholder="First Name">
-        <input type="location" name="location" placeholder="Location">
-      </div>
-      <p>Special Requests</p>
-      <div>
-        <textarea rows="4"></textarea>
-      </div>
-      <button type="submit" href="/">Submit</button>
-    </form>
 
-  </div>
+    <form action="/" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h1>Request A Professional in Your Area</h1>
+        <input type="text" placeholder="Username">
+        <input type="location" placeholder="Location">
+        <textarea placeholder="Message/Special Requests" rows="5"></textarea>
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+      <!--Light Dark Toggle-->
+
+<script src="https://kit.fontawesome.com/cf6ef74e1b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/locationSlider.js"></script>
+  <script src="app.js"></script>
+  <script src="./js/lightdarktheme.js"></script>
 </body>
 
 </html>
+

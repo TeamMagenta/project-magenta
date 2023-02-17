@@ -1,0 +1,64 @@
+/* #cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+nav {
+  width: 960px;
+  height: 70px;
+  margin: auto;
+  background-color: #78A1BB;
+}
+
+.navContainer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navButtons {
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+/*Nav Bar*/
+#cover {
+  position: fixed;
+  width: auto;
+  height: 100%;
+  z-index: 5;
+}
+
+menu {
+  position: fixed;
+  right: 20px;
+ top: 20px;
+ font-family: 'Cabin Condensed', sans-serif;
+ align-items: center;
+ list-style: none;
+ z-index: 4;
+}
+
+a {
+  color: #a12222;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
