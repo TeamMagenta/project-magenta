@@ -1,9 +1,39 @@
-#cover {
+/* #cover {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+} */
+
+nav {
+  width: 960px;
+  height: 70px;
+  margin: auto;
+  background-color: #78A1BB;
+}
+
+.navContainer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navButtons {
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+/*Nav Bar*/
+#cover {
+  position: fixed;
+  width: auto;
+  height: 100%;
+  z-index: 5;
 }
 
 menu {
@@ -11,6 +41,9 @@ menu {
   right: 20px;
  top: 20px;
  font-family: 'Cabin Condensed', sans-serif;
+ align-items: center;
+ list-style: none;
+ z-index: 4;
 }
 
 a {
@@ -29,16 +62,3 @@ li {
   float: left;
 }
 
-li a {
-  display: block;
-  color: rgb(150, 78, 78);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #408e85;
-  border-radius: 10px;
-}
